@@ -1,0 +1,110 @@
+.RegistroContenedorp{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid  #309ffa;
+    margin: auto;
+    background: #309ffa;
+    padding: 10px;
+    width: 98%;
+    height: 1000px;
+}
+#Registrologo{
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    object-position: center;
+    grid-column:1/2;
+    grid-row: 2/3; 
+}
+#Registroregistro{
+    display: grid;
+    grid-column: 2/3;
+    grid-row:2/3;
+    width: 100%;
+    margin:auto;
+    background: #ffffff; ;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+
+
+h3{
+    font-size: 25px;
+    font-family: Arial;
+    color:rgb(0, 0, 0) ;
+    text-align: center; 
+}
+
+#Registroregistrar{
+    width: 30%;
+    height: 35px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius:15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    color:#000000 ;
+    text-align: center; 
+
+}
+#Registroregistrar:hover{
+    width: 30%;
+    height: 35px;
+    margin: auto;
+    background: #309ffa;
+    border-radius:15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    color:#ffffff ;
+    text-align: center; 
+
+}
+.Registrotexto{
+    width: 95%;
+    height: 40px;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid #309ffa;
+    
+}
+.Registrotexto:hover{
+    width: 95%;
+    height: 40px;
+    margin: 10px;
+    background: rgb(221, 221, 221);
+    border-radius: 10px;
+    color: #414141;
+    border: 2px solid #309ffa;
+    
+}
+select{
+    width: 90%;
+    height: 25px;
+    margin: auto;
+    background: rgb(166, 209, 216);
+    border-radius: 3px;
+}
+#Registroterminos{
+    font-size: 15px;
+    font-family: Arial;
+    color:#309ffa;
+    text-align: center; 
+
+}
+select{
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+#Registroterminos{
+    text-align: center;
+}
