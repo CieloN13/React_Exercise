@@ -1,0 +1,78 @@
+#AdmAgentecontenedorp {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 10px;
+    width: 98%;
+    height: 1000px;
+}
+
+#AdmAgentelogo { 
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    object-position: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#AdmAgenteregistro {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+#AdmAgenteregistrar:hover {
+    width: 45%;
+    height: 40px;
+    margin: auto;
+    background: #309ffa;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    text-align: center;
+}
+
+.AdmAgentetexto {
+    width: 95%;
+    height: 40px;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid #309ffa;
+}
+
+.AdmAgentetexto:hover {
+    width: 95%;
+    height: 40px;
+    margin: 10px;
+    background: rgb(221, 221, 221);
+    border-radius: 10px;
+    color: #414141;
+    border: 2px solid #309ffa;
+}
+select {
+    width: 90%;
+    height: 25px;
+    margin: auto;
+    background: rgb(166, 209, 216);
+    border-radius: 3px;
+}
+
+select {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}

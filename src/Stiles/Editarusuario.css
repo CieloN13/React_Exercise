@@ -1,0 +1,31 @@
+#Editarusuariocuerpo {
+    background-color: #91cdff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+    gap: 30px;
+}
+
+.Editarusuariotitulo {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.Editarusuariotexto {
+    width: 40%;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid #309ffa;
+}
+
+.Editarusuariotexto:hover {
+    width: 40%;
+    height: 40px;
+    background: rgb(221, 221, 221);
+    border-radius: 10px;
+    color: #414141;
+    border: 2px solid #309ffa;
+}

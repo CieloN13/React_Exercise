@@ -1,0 +1,44 @@
+#AdmCuerpocuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #91cdff;
+    height: 1200px;
+}
+
+#AdmCuerpocuerpo div {
+    padding: auto;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#AdmCuerpocuerpo div a {
+    margin: 30px;
+    background-color: #309ffa;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+#AdmCuerpocuerpo div a:hover {
+    background-color: #ffffff;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    color: #309ffa;
+}
+
+#AdmCuerpocuerpo div a img {
+    width: 140px;
+}
