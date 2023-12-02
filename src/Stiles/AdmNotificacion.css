@@ -1,0 +1,85 @@
+#Admnotificacioncuerpo {
+    background-color: #91cdff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1200px;
+    gap: 10px;
+}
+.Admnotificacioncontenedorp {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #ffffff;
+    ;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+#Admnotificacionsoporte { 
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    object-position: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+.AdmnotificacionNombre {
+    width: 95%;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid #309ffa;
+}
+
+.Admnotificaciondescripcion {
+    width: 95%;
+    height: 100px;
+    margin-bottom: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid #309ffa;
+}
+#Admnotificacionregistrar {
+    width: 40%;
+    height: 35px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    border: 2px solid #309ffa;
+    text-align: center;
+}
+
+#Admnotificacionregistrar:hover {
+    width: 45%;
+    height: 40px;
+    background: #309ffa;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    text-align: center;
+}

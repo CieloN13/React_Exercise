@@ -1,0 +1,22 @@
+#Notificacioncuerpo {
+    background-color: #91cdff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+#Notificacioncuerpo div {
+    background-color: #309ffa;
+    border-radius: 10px;
+    width: 20%;
+    height: 200px;
+    padding: 10px;
+}
+
+#Notificacioncuerpo div p {
+    color: #000000;
+}

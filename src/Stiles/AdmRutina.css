@@ -1,0 +1,83 @@
+#Admrutinacuerpo {
+    background-color: #91cdff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1500px;
+    gap: 10px;
+}
+
+#Admrutinarutina {
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    object-position: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#Admrutinaregistro {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/34;
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
+    ;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.Admrutinatexto {
+    width: 95%;
+    height: 40px;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid #309ffa;
+}
+
+#Admrutinaregistrar {
+    width: 40%;
+    height: 35px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    color: #000000;
+    text-align: center;
+}
+
+#Admrutinaregistrar:hover {
+    width: 45%;
+    height: 40px;
+    margin: auto;
+    background: #309ffa;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    text-align: center;
+}
+
+.Admrutinadescripcion {
+    width: 95%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #309ffa;
+}
