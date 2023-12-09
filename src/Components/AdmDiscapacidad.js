@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Stiles/AdmDiscapacidad.css';
 import ExercisePD from '../IMG/ExercisePD.png';
+<<<<<<< HEAD
 import { useState,useEffect } from 'react';
 import AdmHeader from './AdmHeader';
 
@@ -9,6 +10,12 @@ export default function AdmDiscapacidad(){
                      /*       
         <article id="AdmDiscapacidadcuerpo">  
     
+=======
+
+export default function AdmDiscapacidad(){
+    return(
+        <article id="AdmDiscapacidadcuerpo">  
+>>>>>>> ysus
             <div className="AdmDiscapacidadcontenedorp">
                 <header id="AdmDiscapacidadtexto">
                     <h3>Agregar Nueva Discapacidad<img src={ExercisePD} className='discapacidad' alt="image" width="33%"/></h3>
@@ -22,6 +29,7 @@ export default function AdmDiscapacidad(){
                 <input type="button" id="registrar" value="Agregar Discapacidad"/>
 
             </div>
+<<<<<<< HEAD
             
         </article>
         */
@@ -111,4 +119,9 @@ export default function AdmDiscapacidad(){
                 
         );
     
+=======
+
+        </article>
+    )
+>>>>>>> ysus
 }

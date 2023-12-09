@@ -6,7 +6,11 @@ import informe from '../IMG/informe.png';
 import agentesoporte from '../IMG/agentesoporte.png';
 import campana from '../IMG/campana.png';
 import usuario from '../IMG/usuario.png';
+<<<<<<< HEAD
 import {Link, NavLink} from 'react-router-dom';
+=======
+import {NavLink} from 'react-router-dom';
+>>>>>>> ysus
 
 export default function Header(){
     return(
@@ -14,6 +18,7 @@ export default function Header(){
     <a  className="microfono"><img src={microfono} alt="image"/></a>
 
     <div className="imgcasa"><img src={casita} alt="image"/></div>
+<<<<<<< HEAD
     <div className="boton1" ><NavLink className="botoninicio" to="/cuerpo">INICIO</NavLink></div>
 
 
@@ -23,6 +28,17 @@ export default function Header(){
 
     <div className="imgagente"><img src={agentesoporte} alt="image"/></div>
     <div className="boton3"><NavLink className="botonagente" to="/recomendaciones">RECOMENDACIONES</NavLink></div>
+=======
+    <div className="boton1" ><NavLink className="botoninicio" to="/">INICIO</NavLink></div>
+
+
+    <div className="imginforme"><img src={informe} alt="image"/></div>
+    <div className="boton2"><NavLink className="botoninforme" to="/AtencionC">MIS RUTINAS</NavLink></div>
+
+
+    <div className="imgagente"><img src={agentesoporte} alt="image"/></div>
+    <div className="boton3"><NavLink className="botonagente" to="/AtencionC">AGENTE</NavLink></div>
+>>>>>>> ysus
 
     <NavLink to="/Notificacion" className="campana"><img src={campana} alt="image"/></NavLink>
       <div className="hamburguesa1">
@@ -30,11 +46,19 @@ export default function Header(){
             <input type="checkbox" id="menu"/>
             <label for="menu"> ☰ </label>
             <ul>
+<<<<<<< HEAD
               <Link to="/">Cerrar Sesion</Link>
             </ul>
           </nav>
       </div>
     <NavLink to="/editarperfil" className="usuario"><img src={usuario}  alt="image" width="33%"/></NavLink>
+=======
+              <a href="login.html">Cerrar Sesion</a>
+            </ul>
+          </nav>
+      </div>
+    <NavLink to="/EditarPerfil" className="usuario"><img src={usuario}  alt="image" width="33%"/></NavLink>
+>>>>>>> ysus
   </header>);
 }
 
