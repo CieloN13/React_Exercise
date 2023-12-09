@@ -6,23 +6,10 @@
     height: 1200px;
     gap: 10px;
 }
-<<<<<<< HEAD
 .AdmDiscapacidadcontenedorp {
     display: flex;
     flex-direction: column;
     justify-content: center;
-=======
-.AdmDiscapacidaddiscapacidad {
-    width: 60px;
-    height: 60px;
-    object-fit: fill;
-    object-position: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.AdmDiscapacidadcontenedorp {
-    display: grid;
->>>>>>> ysus
     grid-column: 2/4;
     grid-row: 2/4;
     width: 100%;
@@ -34,7 +21,6 @@
     border: 1px solid #ffffff;
     border-radius: 10px;
 }
-<<<<<<< HEAD
 #form{
     width: 100%;
     height: auto;
@@ -42,9 +28,6 @@
     flex-direction: column;
 
 }
-=======
-
->>>>>>> ysus
 h3 {
     font-size: 25px;
     font-family: Arial;

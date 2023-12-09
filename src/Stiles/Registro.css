@@ -39,10 +39,7 @@ h3{
 }
 
 #Registroregistrar{
-<<<<<<< HEAD
     display: grid;
-=======
->>>>>>> ysus
     width: 30%;
     height: 35px;
     margin: auto;
@@ -54,10 +51,7 @@ h3{
     font-family: Arial;
     color:#000000 ;
     text-align: center; 
-<<<<<<< HEAD
     grid-column:2/3;
-=======
->>>>>>> ysus
 
 }
 #Registroregistrar:hover{
