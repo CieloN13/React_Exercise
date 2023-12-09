@@ -30,7 +30,7 @@ export default function Header(){
             <input type="checkbox" id="menu"/>
             <label for="menu"> ☰ </label>
             <ul>
-              <Link to="/login">Cerrar Sesion</Link>
+              <Link to="/">Cerrar Sesion</Link>
             </ul>
           </nav>
       </div>

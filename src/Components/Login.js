@@ -1,34 +1,50 @@
 import React, { useState } from 'react';
-import { Navigate, BrowserRouter as Router } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link,Navigate,useNavigate} from 'react-router-dom';
+import axios from 'axios';
+
+
 
 import ExercisePD from '../IMG/ExercisePD.png';
 import '../Stiles/Login.css';
 
-export default function Login({ handleLogin }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+export default function Login({ setUserId }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleSignIn = () => {
-    // Simulación de inicio de sesión exitosa si los campos no están vacíos
-    if (username !== '' && password !== '') {
-      setIsLoggedIn(true);
-      handleLogin(); // Llama a la función handleLogin pasada como prop
-    } else {
-      // Manejar el caso en el que la validación falla
-      console.log('Por favor ingresa usuario y contraseña válidos');
-      // Puedes mostrar un mensaje de error al usuario o realizar otras acciones
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Endpoint de tu API para validar el usuario
+    const endpoint = 'http://127.0.0.1:5000/validar_usuario';
+
+    try {
+      const response = await axios.post(endpoint, {
+        usuario: username,
+        contraseña: password,
+      });
+
+      if (response.status === 200) {
+        const data = response.data;
+        if (data.idDocumento) {
+          setUserId(data.idDocumento); // Establecer el ID del usuario en el estado
+
+          // Redireccionar según el rol
+          if (data.idRol === 1) {
+            navigate('/ruta-para-usuario-de-rol-1');
+          } else if (data.idRol === 3) {
+            navigate('/ruta-para-usuario-de-rol-3');
+          }
+        } else {
+          console.log('Error: No se recibió el ID del usuario');
+        }
+      } else {
+        console.log('Error al autenticar el usuario');
+      }
+    } catch (error) {
+      console.error('Error al procesar la solicitud:', error);
     }
   };
-
-  if (isLoggedIn) {
-    return (
-     
-        <Navigate to="/" />
-      
-    );
-  }
 
   return (
     <body>
@@ -56,7 +72,8 @@ export default function Login({ handleLogin }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <a ><input className="ingresar" type="button" value="Ingresar" onClick={handleSignIn} /></a>
+        {/* Usamos un botón en lugar de un enlace para mantener el estilo */}
+        <button className="ingresar" onClick={handleSubmit}>Ingresar</button>
         <p><Link to="/registro" id="registrarse">Registrarse</Link></p>
       </section>
     </body>

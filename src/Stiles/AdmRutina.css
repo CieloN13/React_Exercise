@@ -1,9 +1,9 @@
 #Admrutinacuerpo {
     background-color: #91cdff;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    height: 1500px;
+    padding: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 2000px;
     gap: 10px;
 }
 
@@ -12,8 +12,8 @@
     height: 60px;
     object-fit: fill;
     object-position: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column: 0/1;
+    grid-row: 0/2;
 }
 
 #Admrutinaregistro {
@@ -44,7 +44,15 @@ h3 {
     border-radius: 10px;
     border: 2px solid #309ffa;
 }
-
+#Admrutinatexto h3{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 #Admrutinaregistrar {
     width: 40%;
     height: 35px;
@@ -60,11 +68,9 @@ h3 {
 }
 
 #Admrutinaregistrar:hover {
-    width: 45%;
-    height: 40px;
     margin: auto;
     background: #309ffa;
-    border-radius: 15px;
+    border-radius: 10px;
     border-width: 3px;
     border-style: solid;
     font-size: 15px;

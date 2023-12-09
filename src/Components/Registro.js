@@ -147,7 +147,8 @@ export default function Registro(){
                 const contentType = response.headers.get('content-type');
                 if (contentType && contentType.includes('application/json')) {
                   const data = await response.json();
-                  console.log('Datos recibidos:', data);
+                  alert(JSON.stringify(data));
+                  //console.log('Datos recibidos:', data);
                   // Manejo de la respuesta JSON recibida
                 } else {
                   console.log('Respuesta no es JSON');
@@ -263,7 +264,7 @@ export default function Registro(){
 
 
                 <input type="submit" id="Registroregistrar" value="Registrarme" />
-                <Link to="/login" id="Registroterminos">¿Ya tienes cuenta?</Link>
+                <Link to="/" id="Registroterminos">¿Ya tienes cuenta?</Link>
                 </form>
             </div>
          </div>

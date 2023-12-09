@@ -8,7 +8,7 @@ export default function AdmHeader(){
     return(
         <header id="AdmHeadercabecera">
 
-            <NavLink to="/" className=".AdmHeaderimgcasa"><img src={casita}  alt="image" width="33%"/></NavLink>
+            <NavLink to="/admcuerpo" className=".AdmHeaderimgcasa"><img src={casita}  alt="image" width="33%"/></NavLink>
             <div className="hamburguesa1">
                 <nav className="hamburguesa">
                     <input type="checkbox" id="menu"/>

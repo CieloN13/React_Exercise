@@ -2,6 +2,7 @@ import React from 'react';
 import '../Stiles/AdmDiscapacidad.css';
 import ExercisePD from '../IMG/ExercisePD.png';
 import { useState,useEffect } from 'react';
+import AdmHeader from './AdmHeader';
 
 export default function AdmDiscapacidad(){
     
@@ -82,7 +83,8 @@ export default function AdmDiscapacidad(){
             mostrarMensaje();
           }, [mensajeExitoso]);
         return (
-            <article id="AdmDiscapacidadcuerpo">
+          <><AdmHeader/>
+          <article id="AdmDiscapacidadcuerpo">
                 <div className="AdmDiscapacidadcontenedorp">
                     <header id="AdmDiscapacidadtexto">
                         <h3>Agregar Nueva Discapacidad<img src={ExercisePD} className='discapacidad' alt="image" width="33%"/></h3>
@@ -104,6 +106,8 @@ export default function AdmDiscapacidad(){
                     </form>
                 </div>
             </article>
+          </>
+            
                 
         );
     
