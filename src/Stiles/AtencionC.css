@@ -1,32 +1,29 @@
 #cuerpoAtencionC{
     background-color: #91cdff;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+
     height: auto;
     color: aliceblue;
 }
-
-.chat {
-    width: 400px;
-    height: 400px;
-    background-color: aliceblue;
+#cuerpoAtencionC div{
+    flex: 1;
 }
-
-#barra {
-    width: 200px;
-    margin: 10px;
-}
-
-.enviar {
-    background: white;
-    color: #309ffa;
+#cuerpoAtencionC section{
+    background-color: #309ffa;
+    margin: 1%;
     border-radius: 10px;
-    width: 100px;
-    height: 30px;
+    padding: 2%;
+    
 }
-
-.enviar:hover {
-    background: #309ffa;
-    color: white;
+#cuerpoAtencionC section h1{
+    color: rgb(147, 243, 243);
+    text-align: center;
+    
+    
+}
+#cuerpoAtencionC section p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+    
 }
